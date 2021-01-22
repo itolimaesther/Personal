@@ -1,0 +1,2395 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Quintessential");
+@import url("https://fonts.googleapis.com/css?family=Della+Respira|Niconne|Prata");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+  display: block;
+  content: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  -webkit-box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.checked {
+  color: orange;
+}
+
+#kristam {
+  min-height: 100vh;
+}
+#kristam .searcharea {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#kristam .searcharea .address p {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+  padding: 3px 0px;
+}
+#kristam .searcharea .searchbar input[type=search] {
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+}
+#kristam .searcharea .searchbar i:hover {
+  cursor: pointer;
+}
+#kristam .krislogo {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  left: 40%;
+  z-index: 5000;
+  margin-top: 40px;
+}
+#kristam .krislogo img {
+  width: 100%;
+}
+#kristam nav {
+  padding: 9px 50px;
+}
+#kristam nav .krispic {
+  display: none;
+  margin: 10px 60px;
+}
+#kristam nav .krispic img {
+  width: 60px;
+  top: 40px;
+  left: 50%;
+  z-index: 1000;
+}
+#kristam nav .navbar-toggle {
+  margin: 0;
+  padding: 2px;
+  font-size: 1.3rem;
+}
+#kristam nav .navbar-toggle .icon-bar {
+  color: #8f47ba;
+}
+#kristam nav .in {
+  padding: 0px;
+  margin: 0px;
+}
+#kristam nav .navs {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#kristam nav .navs .space {
+  width: 50px;
+}
+#kristam nav .navs .navlink {
+  margin: 10px 0px;
+}
+#kristam nav .navs a {
+  color: #8f47ba;
+  text-align: center;
+  padding: 3px 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  font-weight: 600;
+  border-radius: 30px;
+}
+#kristam nav .navs a:hover {
+  color: white;
+  background: #8f47ba;
+}
+#kristam nav .active {
+  color: white;
+  border: 2px solid #8f47ba;
+  border-radius: 30px;
+}
+#kristam .hero {
+  height: 77vh;
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: "Quintessential", cursive;
+  z-index: 1000;
+}
+#kristam .hero .wave {
+  transform: rotate(180deg);
+  position: relative;
+}
+#kristam .hero .waved {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2000;
+}
+#kristam .hero .wave, #kristam .hero .wavedown {
+  height: 50px;
+}
+#kristam .hero .wave::before, #kristam .hero .wavedown::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+#kristam .hero .wave::after, #kristam .hero .wavedown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+#kristam .hero .textcontent {
+  max-width: 500px;
+  margin: 18vh auto;
+  color: white;
+  text-align: center;
+}
+#kristam .hero .textcontent h1 {
+  font-size: 2.9rem;
+  font-family: "Quintessential", cursive;
+}
+#kristam .hero .textcontent p {
+  margin: 30px 0px;
+  font-family: "Quintessential", cursive;
+}
+#kristam .hero .textcontent button {
+  background: #8f47ba;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: purple;
+  outline: none;
+  color: white;
+}
+#kristam .promo {
+  display: flex;
+  padding: 80px 100px 40px 100px;
+  border-bottom: 0.3px solid #f1f1f1;
+}
+#kristam .promo .promopic {
+  width: 40%;
+}
+#kristam .promo .promopic img {
+  width: 100%;
+}
+#kristam .promo .timer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+}
+#kristam .promo .timer h4 {
+  font-size: 1.8rem;
+  font-family: "Niconne", cursive;
+}
+#kristam .promo .timer h3 {
+  font-size: 2rem;
+  font-family: "Della Respira", serif;
+}
+#kristam .promo .timer h2 {
+  font-size: 1.5rem;
+}
+#kristam .promo .timer .time {
+  font-size: 3.5rem;
+  font-family: "Della Respira", serif;
+}
+#kristam .promo .timer .time span {
+  padding-right: 10px;
+  font-family: "Prata", serif;
+}
+#kristam .promo .timer .times {
+  font-size: 1.1rem;
+}
+#kristam .promo .timer .times span {
+  padding: 20px;
+}
+#kristam .promo .timer button {
+  width: 150px;
+  margin: 60px auto;
+  background: #8f47ba;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: purple;
+  color: white;
+  outline: none;
+}
+#kristam .offers {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 50px 100px 50px;
+}
+#kristam .offers .swtcks {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 70px 0px;
+}
+#kristam .offers .swtcks .bar {
+  height: 72px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+#kristam .offers .swtcks .title {
+  text-align: center;
+  margin: 0 20px;
+}
+#kristam .offers .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Quintessential", cursive;
+}
+#kristam .offers .swtcks .title p {
+  font-family: "Niconne", cursive;
+  font-size: 1.5rem;
+}
+#kristam .offers .offerlist {
+  display: flex;
+  justify-content: space-between;
+}
+#kristam .offers .offerlist .offer {
+  width: 20%;
+  text-align: center;
+  position: relative;
+}
+#kristam .offers .offerlist .offer img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#kristam .offers .offerlist .offer h4 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+#kristam .offers .offerlist .offer h5 {
+  font-size: 0.8rem;
+  margin: 3px;
+}
+#kristam .offers .offerlist .offer .tag, #kristam .offers .offerlist .offer .tag2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  padding: 15px 15px;
+  border: 10px dotted #8f47ba;
+}
+#kristam .offers .offerlist .offer .tag2 {
+  transform: rotate(-28deg);
+}
+#kristam .offers .offerlist .offer .perc {
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  background: #8f47ba;
+  border-radius: 50%;
+  padding: 10px 6px;
+}
+#kristam .offers .offerlist .offer .perc p {
+  font-size: 0.8rem;
+  color: white;
+  transform: rotate(-20deg);
+  margin: 0;
+}
+#kristam .offers .offerlist .offer .tag3, #kristam .offers .offerlist .offer .tag4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 15px 15px;
+  border: 10px dotted #8f47ba;
+}
+#kristam .offers .offerlist .offer .tag4 {
+  transform: rotate(-28deg);
+}
+#kristam .offers .offerlist .offer .percs {
+  position: absolute;
+  top: 1.5%;
+  right: 1.5%;
+  background: #8f47ba;
+  border-radius: 50%;
+  padding: 10px 8px;
+}
+#kristam .offers .offerlist .offer .percs p {
+  font-size: 0.8rem;
+  color: white;
+  transform: rotate(-20deg);
+  margin: 0;
+}
+#kristam .toprating {
+  background: #f1f1f1;
+  padding: 0px 10px 30px 10px;
+}
+#kristam .toprating .contain {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#kristam .toprating .contain .carousel {
+  padding: 30px 0px 80px 0px;
+}
+#kristam .toprating .contain .carousel li {
+  transition: all 0.5s;
+  background-color: #8f47ba;
+  padding: 7px;
+}
+#kristam .toprating .contain .carousel li.active {
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 0.5s;
+  color: purple;
+}
+#kristam .toprating .contain .carousel .item {
+  text-align: center;
+}
+#kristam .toprating .contain .carousel .item .criticpic {
+  width: 100px;
+  margin: 0 auto;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+#kristam .toprating .contain .carousel .item .criticpic img {
+  width: 100%;
+  border-radius: 50%;
+}
+#kristam .toprating .contain .carousel .item p {
+  font-size: 1rem;
+}
+#kristam .weeklyoffer {
+  padding: 0px 10px;
+}
+#kristam .weeklyoffer .swtcks {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 70px 0px;
+}
+#kristam .weeklyoffer .swtcks .bar {
+  height: 72px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+#kristam .weeklyoffer .swtcks .title {
+  text-align: center;
+  margin: 0 20px;
+}
+#kristam .weeklyoffer .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Quintessential", cursive;
+}
+#kristam .weeklyoffer .swtcks .title p {
+  font-family: "Niconne", cursive;
+  font-size: 1.5rem;
+}
+#kristam .weeklyoffer .offerspace {
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Della Respira", serif;
+}
+#kristam .weeklyoffer .offerspace .bigoffer {
+  background-image: url("../img/bigoffer.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#kristam .weeklyoffer .offerspace .offerbig {
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+#kristam .weeklyoffer .offerspace .offerbig button {
+  background: #8f47ba;
+  padding: 10px 30px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offerlabel {
+  padding: 30px;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offerlabel h1 {
+  font-family: "Della Respira", serif;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offerlabel span {
+  color: #8f47ba;
+  font-weight: 500;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offerbottom {
+  background: pink;
+  margin: 5px 0px 0px 0px;
+  height: 200px;
+  padding: 100px 20px 20px 20px;
+  border-radius: 8px;
+  background-image: url("../img/lollipops.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offerbottom span {
+  font-size: 1.5rem;
+  color: #8f47ba;
+  font-weight: 500;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offertop {
+  height: 200px;
+  margin: 0px 0px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+  width: 50%;
+  margin: 0px 5px 0px 0px;
+  background: lightblue;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px;
+  background-image: url("../img/topleft.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+  width: 50%;
+  padding: 10px;
+  margin: 0px 0px 0px 5px;
+  background: lightgreen;
+  border-radius: 8px;
+  background-image: url("../img/topright.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
+  padding: 5px 15px;
+  font-size: 0.7rem;
+}
+#kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
+  font-size: 1.5rem;
+  color: #8f47ba;
+  font-weight: 500;
+}
+#kristam .hotandnew {
+  max-width: 1200px;
+  margin: 0px auto 50px auto;
+  padding: 0px 10px;
+}
+#kristam .hotandnew .hotnew {
+  display: flex;
+  justify-content: space-between;
+}
+#kristam .hotandnew .hotnew .swtcks {
+  display: flex;
+  margin: 50px 0px 70px 0px;
+}
+#kristam .hotandnew .hotnew .swtcks .bar {
+  height: 29px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+#kristam .hotandnew .hotnew .swtcks .title {
+  text-align: center;
+  margin: 0 20px 0 0;
+}
+#kristam .hotandnew .hotnew .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Quintessential", cursive;
+}
+#kristam .hotandnew .hotnew .swtcks .title p {
+  font-family: "Niconne", cursive;
+  font-size: 1.5rem;
+}
+#kristam .hotandnew .hotnew .hot, #kristam .hotandnew .hotnew .new {
+  width: 50%;
+}
+#kristam .hotandnew .hotnew .hot .hotcake, #kristam .hotandnew .hotnew .new .hotcake {
+  display: flex;
+  margin: 10px;
+}
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakepic, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic {
+  width: 30%;
+}
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakepic img, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic img {
+  width: 100%;
+}
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc {
+  width: 70%;
+  padding: 5px;
+}
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc h3, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc h3 {
+  font-size: 0.9rem;
+  margin: 0px;
+}
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc p, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc p {
+  font-size: 0.8rem;
+  margin: 10px 0px;
+}
+#kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc button, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc button {
+  background: #8f47ba;
+  padding: 5px 15px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  margin: 10px 0px;
+}
+#kristam .pastrychefs {
+  background: #f1f1f1;
+  padding: 50px 20px;
+}
+#kristam .pastrychefs .chefs {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#kristam .pastrychefs .chefs .aboutchefs {
+  width: 35%;
+}
+#kristam .pastrychefs .chefs .aboutchefs .swtcks {
+  display: flex;
+  margin: 50px 0px 70px 0px;
+}
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .bar {
+  height: 29px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .title {
+  text-align: center;
+  margin: 0 20px 0 0;
+}
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Quintessential", cursive;
+}
+#kristam .pastrychefs .chefs .aboutchefs .swtcks .title p {
+  font-family: "Niconne", cursive;
+  font-size: 1.5rem;
+}
+#kristam .pastrychefs .chefs .aboutchefs button {
+  background: #8f47ba;
+  padding: 5px 15px;
+  border: #8f47ba;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  margin: 10px 0px;
+}
+#kristam .pastrychefs .chefs .chefcards {
+  display: flex;
+  justify-content: space-around;
+}
+#kristam .pastrychefs .chefs .chefcards .chef {
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+#kristam .pastrychefs .chefs .chefcards .chef img {
+  width: 100%;
+}
+#kristam .pastrychefs .chefs .chefcards .chef .aboutchef {
+  padding: 10px;
+}
+#kristam .pastrychefs .chefs .chefcards .chef .aboutchef span {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+#kristam .blogclips {
+  padding: 0px 10px;
+}
+#kristam .blogclips .swtcks {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 70px 0px;
+}
+#kristam .blogclips .swtcks .bar {
+  height: 72px;
+  width: 120px;
+  border-bottom: 20px solid #f1f1f1;
+}
+#kristam .blogclips .swtcks .title {
+  text-align: center;
+  margin: 0 20px;
+}
+#kristam .blogclips .swtcks .title h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Quintessential", cursive;
+}
+#kristam .blogclips .swtcks .title p {
+  font-family: "Niconne", cursive;
+  font-size: 1.5rem;
+}
+#kristam .blogclips .blogspace {
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Della Respira", serif;
+}
+#kristam .blogclips .blogspace .bigblog {
+  border-radius: 7px;
+  background-image: url("../img/blogpic1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#kristam .blogclips .blogspace .blogbig {
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#kristam .blogclips .blogspace .blogbig button {
+  background: white;
+  padding: 10px 30px;
+  border: white;
+  border-radius: 20px;
+  color: #8f47ba;
+}
+#kristam .blogclips .blogspace .blogbig .bloglabel {
+  padding: 30px;
+}
+#kristam .blogclips .blogspace .blogbig .bloglabel h1 {
+  font-family: "Della Respira", serif;
+}
+#kristam .blogclips .blogspace .blogbig .bloglabel span {
+  color: orange;
+  font-weight: 500;
+}
+#kristam .blogclips .blogspace .blogbig .bloglabel .blogdetails {
+  margin-top: 70px;
+  max-width: 300px;
+}
+#kristam .blogclips .blogspace .blogbig .bloglabel .blogdetails button {
+  margin-top: 20px;
+}
+#kristam .blogclips .blogspace .blogbig .blogbottom {
+  background-image: url("../img/blogpic3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px 0px 0px 0px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 7px;
+}
+#kristam .blogclips .blogspace .blogbig .blogbottom span {
+  color: orange;
+  font-weight: 500;
+}
+#kristam .blogclips .blogspace .blogbig .blogbottom button {
+  margin-top: 20px;
+}
+#kristam .blogclips .blogspace .blogbig .blogbottom h1 {
+  font-size: 1.5rem;
+}
+#kristam .blogclips .blogspace .blogbig .blogtop {
+  background-image: url("../img/blogpic2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 0px 0px 5px 0px;
+  padding: 20px;
+  border-radius: 7px;
+}
+#kristam .blogclips .blogspace .blogbig .blogtop span {
+  color: orange;
+  font-weight: 500;
+}
+#kristam .blogclips .blogspace .blogbig .blogtop button {
+  margin-top: 20px;
+}
+#kristam .blogclips .blogspace .blogbig .blogtop h1 {
+  font-size: 1.5rem;
+}
+#kristam .affiliates {
+  padding: 50px 10px;
+}
+#kristam .affiliates .affcontain {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#kristam .affiliates .affcontain .aff {
+  width: 15%;
+}
+#kristam .affiliates .affcontain .aff img {
+  width: 100%;
+}
+#kristam .map {
+  height: 85vh;
+  width: 100%;
+  background: #8f47ba;
+}
+#kristam .contactform {
+  position: relative;
+}
+#kristam .contactform .form {
+  position: absolute;
+  padding: 20px 40px;
+  margin-left: 130px;
+  top: 100%;
+  width: 400px;
+  height: 85vh;
+  transform: translateY(-100%);
+  background: rgba(143, 71, 186, 0.6);
+  color: white;
+}
+#kristam .contactform .form .contact {
+  text-align: center;
+}
+#kristam .contactform .form form {
+  display: flex;
+  flex-direction: column;
+}
+#kristam .contactform .form form label {
+  font-weight: 400;
+}
+#kristam .contactform .form form input, #kristam .contactform .form form textarea {
+  padding: 6px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  outline: none;
+}
+#kristam .contactform .form form textarea {
+  resize: vertical;
+  max-height: 60px;
+}
+#kristam .contactform .form form button {
+  width: 150px;
+  background: white;
+  padding: 10px 10px;
+  border: white;
+  border-radius: 20px;
+  color: #8f47ba;
+  margin: 0 auto;
+}
+#kristam .aboutcontact {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 80px 80px;
+  color: white;
+}
+#kristam .aboutcontact .about {
+  width: 40%;
+}
+#kristam .aboutcontact .about h4, #kristam .aboutcontact .about p {
+  font-size: 0.8rem;
+}
+#kristam .aboutcontact .about p {
+  font-weight: 200;
+}
+#kristam .aboutcontact .about h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+#kristam .aboutcontact .logo {
+  width: 15%;
+}
+#kristam .aboutcontact .logo img {
+  width: 100%;
+}
+#kristam .aboutcontact .subscribe {
+  width: 40%;
+}
+#kristam .aboutcontact .subscribe h4, #kristam .aboutcontact .subscribe p {
+  font-size: 0.8rem;
+}
+#kristam .aboutcontact .subscribe p {
+  font-weight: 200;
+}
+#kristam .aboutcontact .subscribe input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  width: 280px;
+  outline: none;
+}
+#kristam .aboutcontact .subscribe input::placeholder {
+  color: #999;
+  font-weight: lighter;
+}
+#kristam .aboutcontact .subscribe button {
+  padding: 10px 30px;
+  background: #8f47ba;
+  border-radius: 20px;
+  border: none;
+  margin-left: -35px;
+  outline: none;
+}
+#kristam footer {
+  padding: 50px 10px;
+}
+#kristam footer .footitems {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#kristam footer .footitems .payment, #kristam footer .footitems .officetime, #kristam footer .footitems .return, #kristam footer .footitems .socialconnect {
+  width: 22%;
+}
+#kristam footer .footitems .payment .cards {
+  display: flex;
+  margin-top: 30px;
+}
+#kristam footer .footitems .payment .cards .card {
+  width: 40%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+#kristam footer .footitems .payment .cards .card img {
+  width: 100%;
+}
+#kristam footer .footitems .officetime h4 {
+  margin-bottom: 30px;
+}
+#kristam footer .footitems .return {
+  display: block;
+}
+#kristam footer .footitems .return h4 {
+  margin-bottom: 30px;
+}
+#kristam footer .footitems .return ul {
+  list-style: none;
+}
+#kristam footer .footitems .return ul li {
+  padding-bottom: 6px;
+}
+#kristam footer .footitems .return ul li a {
+  text-decoration: none;
+  color: black;
+}
+#kristam footer .footitems .socialconnect h4 {
+  margin-bottom: 30px;
+}
+#kristam footer .footitems .socialconnect .sociallinks a {
+  margin-right: 15px;
+}
+#kristam footer .footitems .socialconnect .sociallinks a span {
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 8px 12px;
+  color: white;
+}
+#kristam footer .footitems .socialconnect .sociallinks a .fa-twitter {
+  padding: 8px 9px;
+  background: #00aced;
+}
+#kristam footer .footitems .socialconnect .sociallinks a .fa-instagram {
+  padding: 8px 10px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+#kristam footer .footitems .socialconnect .sociallinks a .fa-facebook {
+  background: #3b5998;
+}
+#kristam footer .footitems .socialconnect .playstore {
+  width: 50%;
+  margin-top: 10px;
+}
+#kristam footer .footitems .socialconnect .playstore img {
+  border: 0.5px solid #cccccc;
+  border-radius: 10px;
+  width: 100%;
+}
+#kristam h6 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#kristam h6 a {
+  color: #1aa3ff;
+}
+#kristam h6 a:hover {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #kristam .promo {
+    padding: 40px 10px 40px 10px;
+    border-bottom: 0.3px solid #f1f1f1;
+  }
+  #kristam .promo .timer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  #kristam .promo .timer h4 {
+    font-size: 1.2rem;
+  }
+  #kristam .promo .timer h3 {
+    font-size: 1.4rem;
+  }
+  #kristam .promo .timer h2 {
+    font-size: 1.5rem;
+  }
+  #kristam .promo .timer .time {
+    font-size: 2rem;
+  }
+  #kristam .promo .timer .time span {
+    padding-right: 10px;
+  }
+  #kristam .promo .timer .times {
+    font-size: 0.5rem;
+  }
+  #kristam .promo .timer button {
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #kristam .blogclips p {
+    font-size: 0.6rem;
+  }
+  #kristam .blogclips .blogspace {
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+  #kristam .blogclips .blogspace .blogbig {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #kristam .blogclips .blogspace .blogbig button {
+    padding: 5px 15px;
+  }
+  #kristam .blogclips .blogspace .blogbig .bloglabel {
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  #kristam .blogclips .blogspace .blogbig .bloglabel h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .blogclips .blogspace .blogbig .blogbottom {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 20px 70px 20px;
+    height: 250px;
+  }
+  #kristam .blogclips .blogspace .blogbig .blogtop {
+    margin: 0px 0px 5px 0px;
+    height: 250px;
+  }
+  #kristam .affiliates {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #morrison .time .timeline::after {
+    left: 31px;
+  }
+  #morrison .time .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  #morrison .time .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #696051 transparent transparent;
+  }
+  #morrison .time .left::after {
+    left: 21px;
+  }
+  #morrison .time .right {
+    left: 0%;
+  }
+  #morrison .time .right::after {
+    left: 21px;
+  }
+  #morrison .time .left {
+    text-align: left;
+  }
+  #morrison .time .left h2 {
+    float: none;
+  }
+  #morrison .time p {
+    font-size: 0.7rem;
+  }
+  #morrison .profile {
+    display: block;
+  }
+  #morrison .profile .about {
+    width: 100%;
+  }
+  #morrison .profile .about .abouttext .col h4 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  #morrison .profile .about .abouttext .col p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  #morrison .profile .about .abouttext .col button {
+    border: 1px solid white;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 10px 0px;
+  }
+  #morrison .profile .about .abouttext .col .cv {
+    margin-right: 20px;
+    background: transparent;
+    color: white;
+  }
+  #morrison .profile .about .abouttext .col .hire {
+    background: white;
+    color: black;
+  }
+  #morrison .profile .doing {
+    width: 100%;
+  }
+  #morrison .profile .doing h4 {
+    font-size: 1rem;
+  }
+  #morrison .profile .doing p {
+    font-size: 0.7rem;
+  }
+  #morrison footer {
+    padding: 15px 10px;
+  }
+  #morrison footer h1 {
+    margin: 0px;
+  }
+  #morrison footer h6 {
+    color: white;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  #morrison footer .social {
+    display: flex;
+    max-width: 340px;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  #morrison footer .social a {
+    color: white;
+    padding: 7px 9px;
+  }
+  #morrison footer .social a i {
+    font-size: 1.1rem;
+  }
+  #morrison footer .social .fb {
+    padding: 7px 12px;
+  }
+  #morrison footer .social .gmail {
+    padding: 7px 10px;
+  }
+  #morrison footer .social .gmail i {
+    font-size: 1rem;
+  }
+  #morrison .affiliates {
+    padding: 30px 0px;
+  }
+  #morrison .testify {
+    padding: 30px 0px;
+  }
+  #morrison .testify h4 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  #morrison .testify .tst {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.6rem;
+  }
+  #morrison .testify .tst .carousel {
+    margin: 0px 20px;
+  }
+  #morrison .testify .tst .item {
+    height: 150px;
+    width: 300px;
+    padding: 10px;
+  }
+  #morrison .testify .tst .item img {
+    width: 35px;
+  }
+  #morrison .testify .tst .item p {
+    padding: 10px;
+  }
+  #morrison .testify .tst .item h4 {
+    font-weight: bolder;
+    font-size: 0.6rem;
+  }
+  #morrison .testify .tst a {
+    width: 30px;
+    color: white;
+  }
+  #morrison .skills {
+    padding: 40px 0px;
+  }
+  #morrison .skills .skillarea {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #morrison .skills .stacks {
+    width: 90%;
+    margin: 0px auto;
+  }
+  #morrison .skills .stacks .stack:hover {
+    transform: scale(1.2);
+  }
+  #morrison .skills .stacks .stack {
+    position: relative;
+    width: 70px;
+    transition: all 0.3s;
+  }
+  #morrison .skills .stacks .stack .stackitem {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+  }
+  #morrison .skills .stacks .stack .s1 {
+    border-top: 5px solid #696051;
+  }
+  #morrison .skills .stacks .stack .s2 {
+    border-bottom: 5px solid #696051;
+  }
+  #morrison .skills .stacks .stack .s3 {
+    border-left: 5px solid #696051;
+  }
+  #morrison .skills .stacks .photo {
+    position: absolute;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  #morrison .skills .stacks img {
+    width: 100%;
+  }
+  #morrison .skills button {
+    border: 1px solid white;
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    color: white;
+    background: transparent;
+    transition: all 0.4s;
+    width: 150px;
+  }
+  #morrison .skills p {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 15px 0px 15px 0px;
+  }
+  #morrison .projs .projfilter {
+    padding: 20px 0px;
+  }
+  #morrison .projs .projfilter .projtitle h3 {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin: 5px;
+  }
+  #morrison .projs .projfilter .projnav {
+    display: flex;
+  }
+  #morrison .projs .projfilter .projnav p {
+    font-size: 0.7rem;
+    margin: 5px 5px 5px 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+  }
+  #morrison .projs .projfilter .projnav p:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    margin: 5px 5px 3px 5px;
+    padding-bottom: 5px;
+  }
+  #morrison .projs .projfilter .projnav .all {
+    font-weight: bolder;
+  }
+  #morrison .projs .projtiles {
+    background: #f1f1f1;
+    display: block;
+  }
+  #morrison .projs .projtiles .projtile .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #morrison .projs .projtiles .projtile .middle .text {
+    background-color: #696051;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 16px;
+  }
+  #morrison .projs .projtiles .projtile .web, #morrison .projs .projtiles .projtile .sec {
+    height: 50%;
+  }
+  #morrison .projs .projtiles .projtile .projpic:hover .middle {
+    opacity: 1;
+  }
+  #morrison .projs .projtiles .projtile .projpic:hover img {
+    opacity: 0.1;
+    transform: scale(1.1);
+  }
+  #morrison .projs .projtiles .projtile .firebase {
+    height: 33.3333%;
+  }
+  #morrison .projs .projtiles .projtile .one {
+    background: #dcdcdc;
+  }
+  #morrison .projs .projtiles .projtile .two {
+    background: #cecece;
+  }
+  #morrison .projs .projtiles .projtile .three {
+    background: #c5c5c5;
+  }
+  #morrison .projs .projtiles .projtile .projpic {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  #morrison .projs .projtiles .projtile .projpic img {
+    width: 100%;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+  }
+  #morrison .projs .allproj {
+    padding: 20px 0px;
+  }
+  #morrison .projs h3 {
+    margin-top: 0px;
+    font-size: 0.9rem;
+  }
+
+  #robrainet .advantages .titlebar .bar {
+    width: 200px;
+    height: 10px;
+    background: orange;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  #robrainet .advantages .titlebar .title h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #robrainet .advantages .advantage {
+    margin: 100px auto 0pc auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+  #robrainet .advantages .advantage .pros2 {
+    text-align: right;
+  }
+  #robrainet .advantages .advantage .pros1, #robrainet .advantages .advantage .pros2 {
+    width: 45%;
+  }
+  #robrainet .advantages .advantage .brush {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #robrainet header {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #robrainet header .deer {
+    width: 120px;
+    margin: 0 auto;
+  }
+  #robrainet header .deer img {
+    width: 100%;
+  }
+  #robrainet header .robname {
+    margin-bottom: 30px;
+  }
+  #robrainet header .robname h1 {
+    font-size: 3.5rem;
+  }
+  #robrainet header .robname .o, #robrainet header .robname .b, #robrainet header .robname .ra, #robrainet header .robname .a, #robrainet header .robname .i, #robrainet header .robname .n, #robrainet header .robname .e, #robrainet header .robname .t {
+    margin-left: -5px;
+  }
+  #robrainet header .robname .o {
+    padding-top: 10px;
+  }
+  #robrainet header .robname .ra {
+    padding-top: 10px;
+  }
+  #robrainet header .robname .a {
+    padding-bottom: 5px;
+    margin-top: -2px;
+  }
+  #robrainet header .robname .n {
+    padding-top: 10px;
+  }
+  #robrainet header .robname .t {
+    padding-top: 10px;
+  }
+  #robrainet header .tagline {
+    font-weight: 5px;
+    text-align: center;
+    margin: 20px auto 0px auto;
+    max-width: 280px;
+  }
+  #robrainet nav {
+    padding: 10vh 10px;
+    margin: 0px 5px;
+  }
+  #robrainet nav .navlinks {
+    display: flex;
+    justify-content: center;
+  }
+  #robrainet nav .navlinks .link {
+    margin: 0px 5px;
+    padding: 3px 5px;
+  }
+  #robrainet nav .navlinks a {
+    color: black;
+    font-weight: 500;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 1040px) {
+  #kristam .krislogo {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 185px;
+    left: 40%;
+  }
+  #kristam .weeklyoffer .offerspace {
+    margin: 0 auto 50px auto;
+    display: block;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig button {
+    padding: 10px 30px;
+    margin: 10px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel {
+    padding: 30px;
+    margin-bottom: 150px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel h1 {
+    font-size: 2.3em;
+    margin: 10px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel span {
+    font-weight: 500;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerbottom {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 20px 100px 20px;
+    height: auto;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop {
+    height: auto;
+    margin: 0px 0px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+    width: 50%;
+    margin: 0px 5px 0px 0px;
+    padding: 10px 10px 150px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+    width: 50%;
+    padding: 10px 0px 150px 10px;
+    margin: 0px 0px 0px 5px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright button {
+    padding: 5px 15px;
+    font-size: 0.7rem;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright span {
+    font-size: 1.5rem;
+    color: #8f47ba;
+    font-weight: 500;
+  }
+  #kristam .aboutcontact {
+    display: block;
+    padding: 40px;
+    text-align: center;
+  }
+  #kristam .aboutcontact .about {
+    width: 100%;
+  }
+  #kristam .aboutcontact .logo {
+    width: 30%;
+    margin: 20px auto;
+  }
+  #kristam .aboutcontact .subscribe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #kristam .krislogo {
+    position: absolute;
+    margin: 20px auto;
+    margin-top: 40px;
+    width: 130px;
+    padding-left: 25px;
+    left: 40%;
+  }
+  #kristam .map {
+    height: 40vh;
+    width: 100%;
+  }
+  #kristam .contactform {
+    background: #8f47ba;
+  }
+  #kristam .contactform .form {
+    position: relative;
+    padding: 40px 40px;
+    margin: 0 auto;
+    top: 100%;
+    width: 400px;
+    height: auto;
+    transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 767px) {
+  #kristam .krislogo {
+    display: none;
+  }
+  #kristam .searcharea {
+    display: block;
+    padding: 5px 10px;
+  }
+  #kristam .searcharea .address p {
+    font-size: 0.6rem;
+    margin-bottom: 0px;
+    padding: 3px 0px;
+  }
+  #kristam .searcharea .searchbar {
+    text-align: right;
+  }
+  #kristam .searcharea .searchbar input[type=search] {
+    padding: 3px 8px;
+    font-size: 0.6rem;
+  }
+  #kristam .searcharea .searchbar i:hover {
+    cursor: pointer;
+  }
+  #kristam nav {
+    padding: 9px 15px;
+  }
+  #kristam nav .krispic {
+    display: block;
+    margin: 0px;
+  }
+  #kristam nav .krispic img {
+    width: 85px;
+    top: 40px;
+    left: 50%;
+    z-index: 1000;
+  }
+  #kristam nav .navbar-toggle {
+    margin: 5px 0px;
+    padding: 2px;
+    font-size: 1.3rem;
+    color: #8f47ba;
+  }
+  #kristam nav .navs {
+    padding: 0px;
+    display: block;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 0.3px solid #ccc;
+    border-top: 0.3px solid #ccc;
+  }
+  #kristam nav .navs .navlink {
+    margin: 10px auto;
+    text-align: center;
+    padding-left: 20px;
+  }
+  #kristam nav .navs a {
+    color: purple;
+    border: none;
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 30px;
+  }
+  #kristam nav .navs a:hover {
+    color: white;
+    background: #8f47ba;
+  }
+  #kristam .hero {
+    height: 77vh;
+    z-index: 1000;
+  }
+  #kristam .pastrychefs {
+    background: #f1f1f1;
+    padding: 10px 10px;
+  }
+  #kristam .pastrychefs .chefs {
+    margin: 0 auto;
+    display: block;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs {
+    width: 100%;
+    text-align: center;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks {
+    display: flex;
+    margin: 20px 0px 20px 0px;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .bar {
+    display: none;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .title h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Quintessential", cursive;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs .swtcks .title p {
+    font-family: "Niconne", cursive;
+    font-size: 1.5rem;
+  }
+  #kristam .pastrychefs .chefs .aboutchefs button {
+    background: #8f47ba;
+    padding: 5px 15px;
+    border: #8f47ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    margin: 10px 0px 50px 0px;
+  }
+  #kristam .pastrychefs .chefs .chefcards {
+    display: flex;
+    justify-content: space-around;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef {
+    width: 30%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef img {
+    width: 100%;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef .aboutchef {
+    padding: 10px;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef .aboutchef span {
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #kristam .hero .textcontent {
+    margin: 25vh auto 2vh auto;
+    color: white;
+    text-align: center;
+  }
+  #kristam .hero .textcontent h1 {
+    font-size: 2.2rem;
+  }
+  #kristam .promo {
+    padding: 20px 10px 40px 10px;
+    border-bottom: 0.3px solid #f1f1f1;
+  }
+  #kristam .promo .timer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  #kristam .promo .timer h4 {
+    font-size: 0.8rem;
+  }
+  #kristam .promo .timer h3 {
+    font-size: 0.9rem;
+  }
+  #kristam .promo .timer h2 {
+    font-size: 1rem;
+  }
+  #kristam .promo .timer .time {
+    font-size: 1.4rem;
+  }
+  #kristam .promo .timer .time span {
+    padding-right: 10px;
+  }
+  #kristam .promo .timer .times {
+    font-size: 0.5rem;
+  }
+  #kristam .promo .timer button {
+    width: 150px;
+    margin: 20px auto;
+  }
+  #kristam .offers {
+    padding: 30px 20px;
+  }
+  #kristam .offers .swtcks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .offers .swtcks .bar {
+    height: 72px;
+    width: 48px;
+    border-bottom: 20px solid #f1f1f1;
+  }
+  #kristam .offers .swtcks .title {
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+  }
+  #kristam .offers .swtcks .title h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .offers .swtcks .title p {
+    font-size: 1.1rem;
+  }
+  #kristam .offers .offerlist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #kristam .offers .offerlist .offer {
+    width: 47%;
+    margin-top: 40px;
+  }
+  #kristam .weeklyoffer .swtcks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .weeklyoffer .swtcks .bar {
+    height: 72px;
+    width: 48px;
+    border-bottom: 20px solid #f1f1f1;
+  }
+  #kristam .weeklyoffer .swtcks .title {
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+  }
+  #kristam .weeklyoffer .swtcks .title h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .weeklyoffer .swtcks .title p {
+    font-size: 1.1rem;
+  }
+  #kristam .weeklyoffer .offerspace {
+    margin: 0 auto 50px auto;
+    display: block;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerlabel {
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offerbottom {
+    margin: 5px 0px 0px 0px;
+    padding: 10px 20px 70px 20px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop {
+    margin: 0px 0px 5px 0px;
+    display: block;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopleft {
+    width: 100%;
+    margin: 0px 5px 0px 0px;
+    padding: 10px 10px 80px 0px;
+  }
+  #kristam .weeklyoffer .offerspace .offerbig .offertop .offertopright {
+    width: 100%;
+    padding: 10px 0px 80px 10px;
+    margin: 10px 0px 0px 0px;
+  }
+  #kristam .hotandnew {
+    max-width: 1200px;
+    margin: 0px auto 50px auto;
+    padding: 0px 10px;
+  }
+  #kristam .hotandnew .hotnew {
+    display: block;
+  }
+  #kristam .hotandnew .hotnew .hot, #kristam .hotandnew .hotnew .new {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake, #kristam .hotandnew .hotnew .new .hotcake {
+    display: flex;
+    margin: 10px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic {
+    width: 40%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic img, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic img {
+    width: 100%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc {
+    width: 60%;
+    padding: 5px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc h3, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc h3 {
+    font-size: 0.9rem;
+    margin: 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc p, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc p {
+    font-size: 0.8rem;
+    margin: 10px 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc button, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc button {
+    background: #8f47ba;
+    padding: 5px 15px;
+    border: #8f47ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+    margin: 10px 0px;
+  }
+  #kristam .blogclips .swtcks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .blogclips .swtcks .bar {
+    height: 72px;
+    width: 48px;
+    border-bottom: 20px solid #f1f1f1;
+  }
+  #kristam .blogclips .swtcks .title {
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+  }
+  #kristam .blogclips .swtcks .title h1 {
+    font-size: 1.5rem;
+  }
+  #kristam .blogclips .swtcks .title p {
+    font-size: 1.1rem;
+  }
+  #kristam footer {
+    padding: 20px 10px;
+  }
+  #kristam footer .footitems {
+    margin: 0 auto;
+    display: block;
+  }
+  #kristam footer .footitems .payment {
+    width: 80%;
+    margin: 20px auto 0px auto;
+    text-align: center;
+  }
+  #kristam footer .footitems .officetime, #kristam footer .footitems .return, #kristam footer .footitems .socialconnect {
+    width: 60%;
+    margin: 20px auto 0px auto;
+    text-align: center;
+  }
+  #kristam footer .footitems .payment .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  #kristam footer .footitems .payment .cards .card {
+    width: 40%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin: 0px 10px;
+    border-radius: 5px;
+  }
+  #kristam footer .footitems .payment .cards .card img {
+    width: 100%;
+  }
+  #kristam footer .footitems .officetime h4 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #kristam footer .footitems .officetime h5 {
+    font-size: 0.7rem;
+  }
+  #kristam footer .footitems .officetime p {
+    font-size: 0.6rem;
+  }
+  #kristam footer .footitems .return {
+    display: block;
+  }
+  #kristam footer .footitems .return h4 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #kristam footer .footitems .return ul li {
+    padding-bottom: 3px;
+  }
+  #kristam footer .footitems .return ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+  }
+  #kristam footer .footitems .socialconnect h4 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a {
+    margin-right: 15px;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a span {
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 8px 12px;
+    color: white;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a .fa-twitter {
+    padding: 8px 9px;
+    background: #00aced;
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a .fa-instagram {
+    padding: 8px 10px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  }
+  #kristam footer .footitems .socialconnect .sociallinks a .fa-facebook {
+    background: #3b5998;
+  }
+  #kristam footer .footitems .socialconnect .playstore {
+    width: 50%;
+    margin: 10px auto;
+  }
+  #kristam footer .footitems .socialconnect .playstore img {
+    border: 0.5px solid #cccccc;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  #robrainet .whoweare {
+    padding: 50px 10px 5px 10px;
+  }
+  #robrainet .whoweare .titlebar .bar {
+    width: 200px;
+    height: 10px;
+    background: #1aa3ff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  #robrainet .whoweare .titlebar .title h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #robrainet .whoweare .textcontent {
+    max-width: 900px;
+    margin: 50px auto;
+    display: block;
+  }
+  #robrainet .whoweare .textcontent .num {
+    width: 100%;
+    display: flex;
+  }
+  #robrainet .whoweare .textcontent .num .n {
+    padding: 0px 20px;
+  }
+  #robrainet .whoweare .textcontent .num .n h1 {
+    font-size: 2rem;
+  }
+  #robrainet .whoweare .textcontent .num .n .bar {
+    border-top: 3px solid black;
+    width: 50px;
+    height: 30px;
+    margin-top: -15px;
+    transform: rotate(-20deg);
+    background: #fcfcfc;
+  }
+  #robrainet .whoweare .textcontent .num .text h3 {
+    font-size: 1.1rem;
+  }
+  #robrainet .whoweare .textcontent .num .text p {
+    font-size: 0.7rem;
+  }
+  #robrainet .whoweare .more {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  #robrainet .whoweare .more button {
+    padding: 5px 10px;
+  }
+  #robrainet .advantages .advantage {
+    margin: 50px auto 0px auto;
+    display: block;
+  }
+  #robrainet .advantages .advantage .pros1, #robrainet .advantages .advantage .pros2 {
+    width: 100%;
+  }
+  #robrainet .advantages .advantage .pros1 .pro, #robrainet .advantages .advantage .pros2 .pro {
+    margin-bottom: 5px;
+    display: flex;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .text h4, #robrainet .advantages .advantage .pros2 .pro .text h4 {
+    font-size: 1rem;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .text p, #robrainet .advantages .advantage .pros2 .pro .text p {
+    font-size: 0.7rem;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot span, #robrainet .advantages .advantage .pros2 .pro .dot span {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot .fa-clock-o, #robrainet .advantages .advantage .pros2 .pro .dot .fa-clock-o {
+    padding: 10px 11px;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot .fa-magic, #robrainet .advantages .advantage .pros2 .pro .dot .fa-magic {
+    padding: 10px 10px;
+  }
+  #robrainet .advantages .advantage .pros1 .pro .dot .fa-paint-brush, #robrainet .advantages .advantage .pros2 .pro .dot .fa-paint-brush {
+    padding: 10px 10px;
+  }
+  #robrainet .advantages .advantage .pros2 {
+    text-align: left;
+  }
+  #robrainet .advantages .advantage .pros2 .pro {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #robrainet .testify {
+    padding: 50px 10px 10px 10px;
+  }
+  #robrainet .testify .titlebar {
+    margin-bottom: 30px;
+  }
+  #robrainet .testify .titlebar .bar {
+    width: 200px;
+    height: 10px;
+    background: #1aa3ff;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  #robrainet .testify .titlebar .title {
+    font-weight: 1.1rem;
+    text-align: center;
+  }
+  #robrainet .testify .clients {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #robrainet .testify .clients .client {
+    width: 45%;
+    padding: 10px;
+    margin: 5px 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #kristam .promo {
+    padding: 40px 10px 40px 10px;
+    border-bottom: 0.3px solid #f1f1f1;
+  }
+  #kristam .promo .timer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  #kristam .promo .timer h4 {
+    font-size: 0.6rem;
+    margin-top: 0;
+  }
+  #kristam .promo .timer h3 {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  #kristam .promo .timer h2 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  #kristam .promo .timer .time {
+    font-size: 0.7em;
+    margin: 3px;
+  }
+  #kristam .promo .timer .time span {
+    padding: 0px 13px;
+  }
+  #kristam .promo .timer .times {
+    font-size: 0.5rem;
+    margin: 3px;
+  }
+  #kristam .promo .timer .times span {
+    padding: 0.5rem;
+  }
+  #kristam .promo .timer button {
+    width: 100px;
+    padding: 3px 8px;
+    margin: 0px auto;
+  }
+  #kristam .pastrychefs p {
+    font-size: 0.6rem;
+  }
+  #kristam .pastrychefs .chefs .chefcards {
+    display: block;
+  }
+  #kristam .pastrychefs .chefs .chefcards .chef {
+    width: 80%;
+    margin: 20px auto;
+  }
+  #kristam .contactform .form {
+    padding: 20px 10px;
+    width: 300px;
+    font-size: 0.6rem;
+  }
+  #kristam .contactform .form h1 {
+    font-size: 0.8rem;
+  }
+  #kristam .aboutcontact {
+    display: block;
+    padding: 40px 10px;
+    text-align: center;
+  }
+  #kristam .aboutcontact .about {
+    width: 100%;
+  }
+  #kristam .aboutcontact .about h4, #kristam .aboutcontact .about p {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .about h3 {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .logo {
+    width: 50%;
+    margin: 20px auto;
+  }
+  #kristam .aboutcontact .subscribe {
+    width: 100%;
+  }
+  #kristam .aboutcontact .subscribe h4, #kristam .aboutcontact .subscribe p {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .subscribe h3 {
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .subscribe input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    outline: none;
+    font-size: 0.6rem;
+  }
+  #kristam .aboutcontact .subscribe input::placeholder {
+    color: #999;
+    font-weight: lighter;
+  }
+  #kristam .aboutcontact .subscribe button {
+    padding: 5px 30px;
+    font-size: 0.6rem;
+    background: #8f47ba;
+    border-radius: 20px;
+    border: none;
+    margin-left: -35px;
+    outline: none;
+  }
+
+  #robrainet footer {
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #robrainet footer a {
+    color: #ccc;
+  }
+  #robrainet footer .footcontent {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+  }
+  #robrainet footer .footcontent .socialcontacts span {
+    padding: 5px 6px;
+    background: white;
+    font-size: 1.3rem;
+    color: black;
+  }
+  #robrainet footer .footcontent .socialcontacts .fa-instagram {
+    padding: 5px 7px;
+  }
+  #robrainet footer .footcontent .socialcontacts .fa-facebook {
+    padding: 5px 9px;
+  }
+  #robrainet footer .footcontent .socialcontacts, #robrainet footer .footcontent .locations, #robrainet footer .footcontent .contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 395px) {
+  #morrison footer {
+    padding: 40px 0px;
+  }
+  #morrison footer .social {
+    max-width: 270px;
+  }
+  #morrison .testify {
+    padding: 20px 0px;
+  }
+  #morrison .testify h4 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  #morrison .testify .tst {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.55rem;
+  }
+  #morrison .testify .tst .carousel {
+    margin: 0px 20px;
+  }
+  #morrison .testify .tst .item {
+    height: 140px;
+    width: 250px;
+    padding: 5px;
+  }
+  #morrison .testify .tst .item img {
+    width: 35px;
+  }
+  #morrison .testify .tst .item p {
+    padding: 10px;
+  }
+  #morrison .testify .tst .item h4 {
+    font-weight: bolder;
+    font-size: 0.6rem;
+  }
+  #morrison .testify .tst a {
+    width: 30px;
+    color: white;
+  }
+
+  #kristam .hero {
+    height: 77vh;
+    z-index: 1000;
+  }
+  #kristam .hero .textcontent {
+    margin: 15vh auto 2vh auto;
+  }
+  #kristam .hero .textcontent h1 {
+    font-size: 2rem;
+  }
+  #kristam .hero .textcontent p {
+    padding: 10px 0px;
+    margin: 10px 0px;
+  }
+  #kristam .offers {
+    padding: 10px 10px;
+  }
+  #kristam .offers .swtcks {
+    margin: 0px;
+  }
+  #kristam .offers .swtcks .bar {
+    height: 76px;
+    width: 48px;
+  }
+  #kristam .offers .swtcks .title {
+    text-align: center;
+    margin: 27px 10px 0px 10px;
+  }
+  #kristam .offers .swtcks .title h1 {
+    font-size: 1.2rem;
+  }
+  #kristam .offers .swtcks .title p {
+    font-size: 0.9rem;
+  }
+  #kristam .weeklyoffer .swtcks {
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .weeklyoffer .swtcks .bar {
+    height: 76px;
+    width: 48px;
+  }
+  #kristam .weeklyoffer .swtcks .title {
+    text-align: center;
+    margin: 27px 10px 0px 10px;
+  }
+  #kristam .weeklyoffer .swtcks .title h1 {
+    font-size: 1.2rem;
+  }
+  #kristam .weeklyoffer .swtcks .title p {
+    font-size: 0.9rem;
+  }
+  #kristam .toprating {
+    padding: 0px 10px 10px 10px;
+  }
+  #kristam .toprating .contain {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  #kristam .toprating .contain .carousel {
+    padding: 30px 0px 60px 0px;
+  }
+  #kristam .toprating .contain .carousel .item .criticpic {
+    width: 100px;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  #kristam .toprating .contain .carousel .item .criticpic img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  #kristam .toprating .contain .carousel .item h4 {
+    font-size: 1rem;
+  }
+  #kristam .toprating .contain .carousel .item p {
+    font-size: 0.7rem;
+  }
+  #kristam .hotandnew {
+    max-width: 1200px;
+    margin: 0px auto 20px auto;
+    padding: 0px 10px;
+  }
+  #kristam .hotandnew .hotnew {
+    display: block;
+  }
+  #kristam .hotandnew .hotnew .hot, #kristam .hotandnew .hotnew .new {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake, #kristam .hotandnew .hotnew .new .hotcake {
+    display: flex;
+    margin: 10px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic {
+    width: 45%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakepic img, #kristam .hotandnew .hotnew .new .hotcake .hotcakepic img {
+    width: 100%;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc {
+    width: 55%;
+    padding: 5px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc h3, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc h3 {
+    font-size: 0.7rem;
+    margin: 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc p, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc p {
+    font-size: 0.6rem;
+    margin: 10px 0px;
+  }
+  #kristam .hotandnew .hotnew .hot .hotcake .hotcakedesc button, #kristam .hotandnew .hotnew .new .hotcake .hotcakedesc button {
+    background: #8f47ba;
+    padding: 3px 10px;
+    border: #8f47ba;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.6rem;
+    margin: 5px 0px;
+  }
+  #kristam .blogclips .swtcks {
+    margin: 20px 0px 30px 0px;
+  }
+  #kristam .blogclips .swtcks .bar {
+    height: 76px;
+    width: 48px;
+  }
+  #kristam .blogclips .swtcks .title {
+    text-align: center;
+    margin: 27px 10px 0px 10px;
+  }
+  #kristam .blogclips .swtcks .title h1 {
+    font-size: 1.2rem;
+  }
+  #kristam .blogclips .swtcks .title p {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
