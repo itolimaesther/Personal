@@ -967,6 +967,272 @@ button:hover {
   text-decoration: none;
 }
 
+#robrainet {
+  background: #fcfcfc;
+}
+#robrainet header {
+  height: 100vh;
+  padding: 20px 10px;
+}
+#robrainet header .deer {
+  width: 150px;
+  margin: 0 auto;
+}
+#robrainet header .deer img {
+  width: 100%;
+}
+#robrainet header .robname {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#robrainet header .robname h1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+#robrainet header .robname .o, #robrainet header .robname .b, #robrainet header .robname .ra, #robrainet header .robname .a, #robrainet header .robname .i, #robrainet header .robname .n, #robrainet header .robname .e, #robrainet header .robname .t {
+  margin-left: -10px;
+}
+#robrainet header .robname .o {
+  padding-top: 20px;
+}
+#robrainet header .robname .ra {
+  padding-top: 20px;
+}
+#robrainet header .robname .a {
+  padding-bottom: 5px;
+  margin-top: -2px;
+}
+#robrainet header .robname .n {
+  padding-top: 20px;
+}
+#robrainet header .robname .t {
+  padding-top: 10px;
+}
+#robrainet header .tagline {
+  font-weight: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+#robrainet nav {
+  padding: 10vh 10px;
+  margin: 0px 10px;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+  box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+}
+#robrainet nav .navlinks {
+  display: flex;
+  justify-content: center;
+}
+#robrainet nav .navlinks .link {
+  margin: 0px 20px;
+  padding: 5px 20px;
+}
+#robrainet nav .navlinks a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+#robrainet nav .navlinks a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+#robrainet .whoweare {
+  padding: 100px 10px 5px 10px;
+}
+#robrainet .whoweare .titlebar .bar {
+  width: 200px;
+  height: 10px;
+  background: #1aa3ff;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#robrainet .whoweare .titlebar .title {
+  font-size: 1.1rem;
+  text-align: center;
+}
+#robrainet .whoweare .textcontent {
+  max-width: 900px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#robrainet .whoweare .textcontent .num {
+  width: 48%;
+  display: flex;
+}
+#robrainet .whoweare .textcontent .num .n {
+  padding: 0px 30px;
+}
+#robrainet .whoweare .textcontent .num .n h1 {
+  font-size: 4rem;
+}
+#robrainet .whoweare .textcontent .num .n .bar {
+  border-top: 3px solid black;
+  width: 80px;
+  height: 30px;
+  margin-top: -20px;
+  transform: rotate(-20deg);
+  background: #fcfcfc;
+}
+#robrainet .whoweare .more {
+  text-align: center;
+}
+#robrainet .whoweare .more button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #1aa3ff;
+  outline: none;
+  color: white;
+}
+#robrainet .firstdrip {
+  width: 100%;
+  transform: rotate(180deg);
+}
+#robrainet .showcase {
+  padding: 0px 10px;
+}
+#robrainet .showcase .topcarousel, #robrainet .showcase .bottomcarousel {
+  height: 160px;
+  margin: 50px auto;
+  max-width: 1100px;
+}
+#robrainet .showcase .topcarousel .top-div, #robrainet .showcase .bottomcarousel .top-div {
+  height: 160px;
+  width: 320px;
+  margin: 0px 20px;
+}
+#robrainet .showcase .topcarousel .top-div img, #robrainet .showcase .bottomcarousel .top-div img {
+  width: 100%;
+}
+#robrainet .showcase .topcarousel .slick-prev:before,
+#robrainet .showcase .topcarousel .slick-next:before, #robrainet .showcase .bottomcarousel .slick-prev:before,
+#robrainet .showcase .bottomcarousel .slick-next:before {
+  color: black;
+}
+#robrainet .advantages {
+  padding: 0px 10px 50px 10px;
+  -webkit-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+  -moz-box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+  box-shadow: 0px 7px 10px 0px rgba(50, 50, 50, 0.23);
+}
+#robrainet .advantages .titlebar .bar {
+  width: 200px;
+  height: 10px;
+  background: orange;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#robrainet .advantages .titlebar .title {
+  font-weight: 1.1rem;
+  text-align: center;
+}
+#robrainet .advantages .advantage {
+  margin: 100px auto 0pc auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+#robrainet .advantages .advantage .pros2 {
+  text-align: right;
+}
+#robrainet .advantages .advantage .pros1, #robrainet .advantages .advantage .pros2 {
+  width: 35%;
+}
+#robrainet .advantages .advantage .pros1 .pro, #robrainet .advantages .advantage .pros2 .pro {
+  margin-bottom: 30px;
+  display: flex;
+}
+#robrainet .advantages .advantage .pros1 .pro .dot span, #robrainet .advantages .advantage .pros2 .pro .dot span {
+  padding: 10px 18px;
+  margin: 0px 10px;
+  font-size: 2rem;
+  color: white;
+  background-color: lightgreen;
+  border-radius: 50%;
+}
+#robrainet .advantages .advantage .pros1 .pro .dot .fa-clock-o, #robrainet .advantages .advantage .pros2 .pro .dot .fa-clock-o {
+  background: #8f47ba;
+  padding: 10px 13px;
+}
+#robrainet .advantages .advantage .pros1 .pro .dot .fa-magic, #robrainet .advantages .advantage .pros2 .pro .dot .fa-magic {
+  background: #ff4c4c;
+  padding: 10px 10px;
+}
+#robrainet .advantages .advantage .pros1 .pro .dot .fa-paint-brush, #robrainet .advantages .advantage .pros2 .pro .dot .fa-paint-brush {
+  background: #91b6c8;
+  padding: 10px 10px;
+}
+#robrainet .advantages .advantage .brush {
+  width: 20%;
+  margin-top: -10px;
+}
+#robrainet .advantages .advantage .brush img {
+  width: 100%;
+}
+#robrainet .testify {
+  padding: 100px 10px;
+}
+#robrainet .testify .titlebar {
+  margin-bottom: 50px;
+}
+#robrainet .testify .titlebar .bar {
+  width: 200px;
+  height: 10px;
+  background: #1aa3ff;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#robrainet .testify .titlebar .title {
+  font-weight: 1.1rem;
+  text-align: center;
+}
+#robrainet .testify .clients {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#robrainet .testify .clients .client {
+  width: 18%;
+  background: white;
+  padding: 20px;
+}
+#robrainet .testify .clients .client img {
+  width: 100%;
+}
+#robrainet footer {
+  padding: 50px 10px;
+  background: rgba(0, 0, 0, 0.8);
+}
+#robrainet footer a {
+  color: #ccc;
+}
+#robrainet footer .footcontent {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  color: white;
+}
+#robrainet footer .footcontent .socialcontacts span {
+  padding: 10px 12px;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+}
+#robrainet footer .footcontent .socialcontacts .fa-instagram {
+  padding: 10px 13px;
+}
+#robrainet footer .footcontent .socialcontacts .fa-facebook {
+  padding: 10px 16px;
+}
+
 @media screen and (max-width: 1280px) {
   #kristam .promo {
     padding: 40px 10px 40px 10px;
